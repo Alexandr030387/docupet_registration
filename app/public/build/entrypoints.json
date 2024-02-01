@@ -1,0 +1,15 @@
+{
+  "entrypoints": {
+    "app": {
+      "js": [
+        "/build/runtime.js",
+        "/build/vendors-node_modules_vue3-select2-component_src_Select2_vue-node_modules_fortawesome_fontawes-51e713.js",
+        "/build/app.js"
+      ],
+      "css": [
+        "/build/vendors-node_modules_vue3-select2-component_src_Select2_vue-node_modules_fortawesome_fontawes-51e713.css",
+        "/build/app.css"
+      ]
+    }
+  }
+}

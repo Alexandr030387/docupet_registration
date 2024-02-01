@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="{{ asset('build/images/favicon.60e1d704.ico') }}">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </head>
+    <body style="position: relative; min-height: 100%; top: 0px;">
+    <div id="wrap">
+        <div class="navbar-container container-fluid">
+            <div class="container navbar-header-container">
+                <div class="navbar-header row" style="padding-bottom: 8px;">
+                    <div class="col-sm-12 px-0px text-center" style="padding-top: 8px;">
+                        <div class="col-sm-9 top-logo">
+                            <a class="navbar-brand" href="/">
+                                <img
+                                    class="navbar-brand-image"
+                                    alt="DocuPet - A Safe and Happy Home for every pet"
+                                    src="{{ asset('build/images/top_logo.e8a75d97.png') }}"
+                                >
+                            </a>
+                        </div>
+                        <div class="col-sm-3 top-right-menu">
+                            <a href="#">Help</a>
+                            <a href="#">Save and Finish Later</a>
+                        </div>
+                        <nav id="nav" class="mobile-nav">
+                            <i
+                                    class="fa fa-bars"
+                                    aria-hidden="true"
+                                    onclick="myFunction()"
+                            >
+
+                            </i>
+                            <ul
+                                    id="navigation"
+                                    class="group sf-js-enabled sf-arrows"
+                                    style="display: none"
+                            >
+                                <li id="menu-item-3344" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3344">
+                                    <a href="#">Help</a>
+                                </li>
+                                <li id="menu-item-3530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3530">
+                                    <a href="#">Save and Finish Later</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        {% block body %}{% endblock %}
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navigation");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    </body>
+</html>

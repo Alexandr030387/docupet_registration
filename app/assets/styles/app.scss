@@ -1,0 +1,182 @@
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+.navbar-default .navbar-nav > li:not(.navbar-basket-li) > a {
+    color: #003C71 !important;
+    font-size: 15.4px !important;
+    font-weight: bold;
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: #003c71 !important;
+}
+
+.btn-primary:focus, .btn-primary:hover {
+    color: #003c71 !important;
+    background-color: white !important;
+    border-color: #003c71 !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+    color: #003c71 !important;
+    background-color: white !important;
+    border-color: #003c71 !important;
+}
+
+.btn-missingpets {
+    background-color: transparent;
+    padding: 0 !important;
+    text-transform: capitalize !important;;
+}
+
+.navbar-header-container {
+    min-height: 67px;
+    align-items: center;
+}
+
+.mx-0, .navbar-header {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.navbar-toggle {
+    border-color: #003c71 !important;
+    color: #003c71 !important;
+    padding: .75rem 1.25rem !important;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14.4px;
+    margin-top: 15px;
+}
+
+.navbar-toggle:hover, .navbar-toggle:active, .navbar-toggle:focus {
+    color: white !important;
+    background-color: #003c71 !important;
+}
+
+.navbar-brand {
+    float: none;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    display: unset;
+}
+
+.navbar-brand-image {
+    cursor: pointer;
+    min-height: 50px;
+}
+
+@media screen and (max-width: 319px) {
+    .navbar-brand img {
+        max-height: 35px !important;
+    }
+    .navbar-basket {
+        margin-left: -21px !important;
+    }
+}
+
+.navbar-basket, .navbar-basket-li a{
+    color: #003C71 !important;
+    line-height: 1 !important;
+    padding: 0.75rem 1.55rem !important;
+    margin-right: 0;
+}
+
+.navbar-basket {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 2.25em;
+    margin-top: 10px;
+    position: relative;
+    margin-right: 0;
+}
+
+.navbar-basket:hover, .navbar-basket:active, .navbar-basket:focus {
+    color: #2c5bc5 !important;
+}
+
+.badge-basket {
+    position: absolute;
+    font-size: 0.5em;
+    top: -0.6rem;
+    left: 3.8rem;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.badge-info {
+    color: #212529;
+    background-color: #ffde59;
+}
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* less than 376px */
+@media (max-width: 376px) {
+    .navbar-header {
+        padding-top: 8px !important;
+    }
+    #navigation .navbar-toggle {
+        padding: 0.5rem 0.5rem !important;
+        width: auto;
+    }
+    .navbar-brand {
+        padding: 0 !important;
+        margin-right: 1rem !important;
+    }
+    .navbar-brand-image, .navbar-brand img {
+        min-height: 40px !important;
+        max-height: 40px !important;
+    }
+    .navbar-basket {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    .navbar-basket .badge-basket {
+        top: -1.2rem !important;
+    }
+}
+
+/* less than 992px */
+@media (max-width: 992px) {
+    .navbar-container {
+        padding-right: 0 !important;
+    }
+    .navbar-header-container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .navbar-sm-box-shadow {
+        box-shadow: inset 0px -1px 0.25px 0px #dcdcdc;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav > li:not(.navbar-basket-li) > a {
+        padding: 1.5em .75em !important;
+    }
+}
